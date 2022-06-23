@@ -1,18 +1,18 @@
   #### 1.   Не используем магические числа:
    
    Используем методы коллекций size() вместо просто числа продуктов, поэтому спокойно можем добавлять новые товары.          
-   [ссылка](https://github.com/xelarog/JavaHomework-DesignPatterns-SOLID/blob/ea5defb72f59c5e30a920cbc6f5a84f4fd5dba51/Magazine/src/main/java/Main.java#L253)
+   [ссылка](https://github.com/xelarog/JavaHomework-DesignPatterns-SOLID/blob/dbc5ed7622c3fcc33cf659289af0a56120c8fdec/Magazine/src/main/java/Main.java#L256)
   
   #### 2.   DRY
   Для красивого вывода в консоль использовал разделитель, вызывается он в нескольких методах,
-  поэтому вывел его в отдельный метод [printDelim()](https://github.com/xelarog/JavaHomework-DesignPatterns-SOLID/blob/ea5defb72f59c5e30a920cbc6f5a84f4fd5dba51/Magazine/src/main/java/Main.java#L264)
+  поэтому вывел его в отдельный метод [printDelim()](https://github.com/xelarog/JavaHomework-DesignPatterns-SOLID/blob/dbc5ed7622c3fcc33cf659289af0a56120c8fdec/Magazine/src/main/java/Main.java#L267)
   
-  При выводе в консоль списка всех [товаров](https://github.com/xelarog/JavaHomework-DesignPatterns-SOLID/blob/ea5defb72f59c5e30a920cbc6f5a84f4fd5dba51/Magazine/src/main/java/Main.java#L24) и отфильтрованного [списка](https://github.com/xelarog/JavaHomework-DesignPatterns-SOLID/blob/ea5defb72f59c5e30a920cbc6f5a84f4fd5dba51/Magazine/src/main/java/Main.java#L101) использовал отдельный метод
-  [printProductList()](https://github.com/xelarog/JavaHomework-DesignPatterns-SOLID/blob/ea5defb72f59c5e30a920cbc6f5a84f4fd5dba51/Magazine/src/main/java/Main.java#L243) 
+  При выводе в консоль списка всех [товаров](https://github.com/xelarog/JavaHomework-DesignPatterns-SOLID/blob/dbc5ed7622c3fcc33cf659289af0a56120c8fdec/Magazine/src/main/java/Main.java#L27) и отфильтрованного [списка](https://github.com/xelarog/JavaHomework-DesignPatterns-SOLID/blob/dbc5ed7622c3fcc33cf659289af0a56120c8fdec/Magazine/src/main/java/Main.java#L104) использовал отдельный метод
+  [printProductList()](https://github.com/xelarog/JavaHomework-DesignPatterns-SOLID/blob/dbc5ed7622c3fcc33cf659289af0a56120c8fdec/Magazine/src/main/java/Main.java#L246) 
   
-  Также использовал один и тот же метод  [printProductBasket](https://github.com/xelarog/JavaHomework-DesignPatterns-SOLID/blob/ea5defb72f59c5e30a920cbc6f5a84f4fd5dba51/Magazine/src/main/java/Main.java#L193) 
-  для вывода списка корзины [здесь](https://github.com/xelarog/JavaHomework-DesignPatterns-SOLID/blob/ea5defb72f59c5e30a920cbc6f5a84f4fd5dba51/Magazine/src/main/java/Main.java#L133)
-  и при выводе подробной информации о сделанном заказе [здесь](https://github.com/xelarog/JavaHomework-DesignPatterns-SOLID/blob/ea5defb72f59c5e30a920cbc6f5a84f4fd5dba51/Magazine/src/main/java/Main.java#L163)
+  Также использовал один и тот же метод  [printProductBasket()](https://github.com/xelarog/JavaHomework-DesignPatterns-SOLID/blob/dbc5ed7622c3fcc33cf659289af0a56120c8fdec/Magazine/src/main/java/Main.java#L196) 
+  для вывода списка корзины [здесь](https://github.com/xelarog/JavaHomework-DesignPatterns-SOLID/blob/dbc5ed7622c3fcc33cf659289af0a56120c8fdec/Magazine/src/main/java/Main.java#L136)
+  и при выводе подробной информации о сделанном заказе [здесь](https://github.com/xelarog/JavaHomework-DesignPatterns-SOLID/blob/dbc5ed7622c3fcc33cf659289af0a56120c8fdec/Magazine/src/main/java/Main.java#L166)
   
   #### 3  Принцип единственной ответственности (Single-Responsibility principle)
   
