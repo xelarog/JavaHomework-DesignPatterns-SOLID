@@ -1,6 +1,6 @@
 package Users;
 
-public class VipBuyer extends Buyer{
+public class VipBuyer extends Buyer {
 
     private String vipStatus;
 

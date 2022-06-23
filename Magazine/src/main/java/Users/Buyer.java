@@ -53,6 +53,7 @@ public class Buyer implements IBuyer {
 
     }
 
+    @Override
     public Map<Product, Integer> getProductBasket() {
         return productBasket;
     }

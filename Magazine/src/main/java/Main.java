@@ -8,7 +8,8 @@ public class Main {
 
         List<Product> productsList = fillProductsList();
 
-        Buyer buyer = new Buyer("Александр");
+        IBuyer buyer = new Buyer("Александр");
+        IBuyer buyer1 = new VipBuyer("Николай", "золотой");
 
         Scanner scanner = new Scanner(System.in);
         String input;
@@ -175,7 +176,7 @@ public class Main {
         }
     }
 
-    private static boolean emptyListOrders(Buyer buyer) {
+    private static boolean emptyListOrders(IBuyer buyer) {
         if (buyer.getListOrders().isEmpty()) {
             System.out.println("Вы ещё не сделали ни одного заказа");
             return true;
