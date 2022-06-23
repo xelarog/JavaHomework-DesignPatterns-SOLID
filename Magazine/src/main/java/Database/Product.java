@@ -1,3 +1,5 @@
+package Database;
+
 public class Product {
     private String name;
     private ProductCategory category;
